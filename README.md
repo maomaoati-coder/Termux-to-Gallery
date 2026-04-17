@@ -23,7 +23,7 @@ cd Termux-to-Gallery && python sync_to_gallery.py
 ### ☕ 技术支持与打赏
 如果你觉得这个小工具帮你节省了找视频的时间，欢迎支持作者持续维护。
 
-#### 💎 **[👉 点击此处 (打赏 2.9 元)](https://github.com/maomaoati-coder/Termux-to-Gallery/blob/main/wechat_pay.jpg)**
+#### 💎 **[👉 点击此处 (打赏 2.9 元)](wechat_pay.jpg)**
 ---
 ### 📂 关联仓库 (各自对位跳转)
  * TrustFlow-Zenith-01 - 芯片逻辑验证
