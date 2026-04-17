@@ -1,38 +1,24 @@
 # 💎 Termux-to-Gallery | 安卓相册一键保存工具
 
-> **核心功能**：专门解决在 Termux 环境下下载、生成的视频无法在手机相册中直接查看的问题。
-
-### 🌟 为什么需要它？
-在安卓系统层，Termux 的文件目录是隔离的。本项目通过“物理迁移 + 系统广播”双重逻辑，实现：
-* **即时可见**：无需重启手机，运行脚本后视频秒出在相册首位。
-* **原生质量**：保持视频原始分辨率与编码，确保相册预览不花屏。
+> **解决痛点**：专门解决 Termux 下载的视频在相册里“隐身”的问题。一键迁移，瞬间入库。
 
 ---
 
-### 🛠️ 傻瓜式操作流程
+### 🛠️ 傻瓜式操作流程 (新手必看)
 
-1. **获取存储权限 (仅需一次)**
-   ```bash
-   termux-setup-storage
+**第一步：复制下方指令并在 Termux 中运行 (环境一键配置)**
+```bash
+pkg update && pkg install python ffmpeg git -y && termux-setup-storage
 
 ```
- 2. **下载本项目**
-   ```bash
-   # 如果你在 GitHub，就用这个：
-   git clone ./
-   # 或者手动执行下载
-   
-   ```
- 3. **执行一键保存**
-   将你想保存的视频移动到此文件夹，然后运行：
-   ```bash
-   python sync_to_gallery.py
-   
-   ```
-   *按提示输入文件名，然后直接打开手机相册即可！*
----
+*(弹出授权提示时，请务必点击“允许”)*
+**第二步：下载并运行工具**
+```bash
+git clone [https://github.com/maomaoati-coder/Termux-to-Gallery.git](https://github.com/maomaoati-coder/Termux-to-Gallery.git)
+cd Termux-to-Gallery && python sync_to_gallery.py
 
-------
+```
+*按提示输入文件名，完成后直接打开手机相册即可！*
 
 ### ☕ 技术支持与打赏
 如果你觉得这个小工具帮你节省了找视频的时间，欢迎支持作者持续维护。
