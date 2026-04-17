@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termux 智能画廊助手 | 由 DeepSeek 驱动</title>
+    <style>
+        body { font-family: sans-serif; background: #f4f7f6; padding: 20px; color: #333; }
+        .card { background: white; border-radius: 12px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        h1 { color: #007bff; font-size: 1.5rem; text-align: center; }
+        .btn { display: block; width: 100%; padding: 12px; margin: 10px 0; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; text-align: center; text-decoration: none; }
+        .btn-primary { background: #007bff; color: white; }
+        .btn-success { background: #28a745; color: white; }
+        .pay-box { text-align: center; border: 2px dashed #ffc107; padding: 15px; background: #fffbeb; }
+        input { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; }
+        .status { font-size: 0.9rem; color: #666; margin-top: 5px; }
+    </style>
+</head>
+<body>
+
+    <h1>💎 智能画廊控制台</h1>
+
+    <div class="card">
+        <h3>1. 智能核心配置</h3>
+        <input type="password" id="apiKey" placeholder="请输入您的 DeepSeek API Key">
+        <p class="status">提示：AI 将自动优化您的视频同步逻辑</p>
+    </div>
+
+    <div class="card">
+        <h3>2. 基础版：相册强同步</h3>
+        <p>一键迁移 Termux 视频到系统相册，解决“视频消失”痛点。</p>
+        <button class="btn btn-primary" onclick="runSync()">执行一键同步 (Termux-to-Gallery)</button>
+        <div class="pay-box">
+            <small>支持作者维护：</small><br>
+            <a href="wechat_pay.jpg" style="color: #d9534f; font-weight: bold;">👉 点击打赏 2.9 元 (解锁同步支持)</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>3. 进阶版：UI 增强渲染</h3>
+        <p>调用高配版渲染逻辑，让您的视频展示更具冲击力。</p>
+        <button class="btn btn-success" onclick="runUI()">启动 UI 增强模式 (UI-Gallery)</button>
+        <div class="pay-box">
+            <small>进阶功能支持：</small><br>
+            <a href="../UI-Gallery" style="color: #28a745; font-weight: bold;">👉 前往 UI-Gallery 仓库 (打赏 2.9 元)</a>
+        </div>
+    </div>
+
+    <script>
+        function runSync() {
+            alert("正在通过 DeepSeek 优化指令...\n请在 Termux 中运行: python sync_to_gallery.py");
+        }
+        function runUI() {
+            alert("正在对位 UI-Gallery 增强逻辑...\n请确保已克隆 UI-Gallery 仓库");
+        }
+    </script>
+</body>
+</html>
